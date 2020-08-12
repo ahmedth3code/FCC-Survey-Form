@@ -9,11 +9,76 @@
 <body>
 
     <h1 id="title">FCC Survey Form</h1>
+
     <p id="description">Our thanks in advance for taking part in this survey and helping us improve our site</p>
-    <form action="" id="survey-form">
-                <input type="text" name="name" id="name" required>
-                <input type="email" name="email" id="email" required>
-                <input type="number" name="number" id="number" min="1" max="5">
+
+    <form action="#" id="survey-form">
+
+            <label for="name" id="name-label">Name </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+
+            <label for="email" id="email-label">Email </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" name="number" id="number" min="18" max="99" placeholder="Enter your age here">
+
+            <label for="dropdown" id="dropdown-label">What is your current position?</label>
+            <select name="dropdown" id="dropdown">
+                <option value disabled selected>Select your current role</option>
+                <option value="student">Student</option>
+                <option value="employed">Employed</option>
+                <option value="selfLearner">Self Learner</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+
+            <p id="reccomondation-question">Would you reccomond freeCodeCamp to any of your friends?</p>
+            <label for="definitely" id="radio-definitely-label">
+                <input type="radio" name="recommendattion" id="definitely" value="definitely">
+                Definitely
+            </label>
+            <label for="maybe" id="radio-maybe-label">
+                <input type="radio" name="recommendattion" id="maybe" value="maybe">
+                Maybe
+            </label>
+            <label for="not-sure" id="radio-not-sure-label">
+                <input type="radio" name="recommendattion" id="not-sure" value="notSure">
+                Not sure
+            </label>
+            <label for="definitely-not" id="radio-definitely-not-label">
+                <input type="radio" name="recommendattion" id="definitely-not" value="definitelyNot">
+                Definitely not
+            </label>
+
+            <p id="suggestion-question">What would you think can be improved about freeCodeCamp?</p>
+            <label for="more-courses" id="checkbox-more-courses-label">
+                <input type="checkbox" name="suggestion" id="more-courses" value="moreCourses">
+                More courses
+            </label>
+            <label for="community-support" id="checkbox-community-support-label">
+                <input type="checkbox" name="suggestion" id="community-support" value="communitySupport">
+                Community Support
+            </label>
+            <label for="challenges" id="checkbox-challenges-label">
+                <input type="checkbox" name="suggestion" id="challenges" value="challenges">
+                Challenges
+            </label>
+            <label for="videos" id="checkbox-videos-label">
+                <input type="checkbox" name="suggestion" id="videos" value="videos">
+                Videos
+            </label>
+            <label for="forum" id="checkbox-forum-label">
+                <input type="checkbox" name="suggestion" id="forum" value="forum">
+                Forum
+            </label>
+
+            <p id="additional-additional-comment-description">Please, leave any comments or suggestions you may have, here.</p>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+
+
+
     </form>
     
 </body>
