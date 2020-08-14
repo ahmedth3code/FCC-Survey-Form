@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
+:root {
+    --font-color-prime: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: var(--font-color-prime);
+}
+
+body {
+    height: 100vh;
+    background-color: #86fc90;
+    background-image: url(_img/bg.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #container {
-    background-image: url(_img/);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
