@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
+    --font-prime: 'Roboto', sans-serif;
     --font-color-prime: white;
 }
 
@@ -8,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-prime);
     color: var(--font-color-prime);
 }
 
@@ -23,8 +24,51 @@ body {
 }
 
 #container {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
+
+.heading {
+    margin: 1.1em 0;
+    text-align: center;
+}
+
+.heading #title {
+    font-size: 2em;
+}
+
+.heading #description {
+    font-style: italic;
+}
+
+#survey-form {
+    padding: 1.5em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: .5em 0;
+}
+
+.form-group label,
+.form-group p {
+    font-size: 1.1em;
+}
+
+.form-group input,
+.form-group select,
+.form-group input[type="radio"] {
+    height: 2em;
+}
+
+/* input[type="radio"] {
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+    transform: scale(2);
+} */
