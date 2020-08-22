@@ -2,25 +2,28 @@
 
 :root {
     --font-prime: 'Roboto', sans-serif;
-    --font-color-prime: white;
+    --color-prime: #333;
+    --color-secondary: #0aaeef;
+    --color-tertiary: #fff;
+    --color-quaternary: #86fc90;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-prime);
-    color: var(--font-color-prime);
 }
 
 body {
     height: 100vh;
-    background-color: #86fc90;
+    background-color: var(--color-quaternary);
     background-image: url(_img/bg.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: var(--font-prime);
+    color: var(--color-tertiary);
 }
 
 #container {
@@ -28,6 +31,12 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    #container {
+        width: 90%;
+    }
 }
 
 .heading {
@@ -61,6 +70,45 @@ body {
     font-size: 1.1em;
     margin-bottom: .5em;
 }
+
+/* Radio Button designing */
+
+.form-group .radio-label {
+    position: relative;
+    margin-left: 30px;
+}
+
+.form-group .radio-label::before {
+    content: "";
+    position: absolute;
+    /* background-color: var(--color-tertiary); */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid var(--color-secondary);
+    left: -30px;
+}
+
+.form-group .radio-label.custom-radio::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-secondary);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* border: 3px solid var(--color-tertiary); */
+    left: -27px;
+    top: 3px;
+    transform: scale(.7);
+}
+
+
+
+.form-group .radio-button {
+    display: none;
+}
+
+/* ************************ */
 
 .form-group input[type="text"],
 .form-group input[type="email"],
