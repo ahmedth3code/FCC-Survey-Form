@@ -17,7 +17,7 @@
 body {
     height: 100vh;
     background-color: var(--color-quaternary);
-    background-image: url(_img/bg.jpg);
+    background-image: url(https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
