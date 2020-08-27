@@ -10,104 +10,112 @@
 
 </head>
 
-    <div id="container">
+<body>
 
-        <header>            
-            <h1 id="title">FCC Survey Form</h1>
-        
-            <p id="description">Our thanks in advance for taking part in this survey and helping us improve our site</p>
-        </header>
+<div id="container">
+
+    <header>            
+        <h1 id="title">FCC Survey Form</h1>
     
-        <form action="#" id="survey-form">
+        <p id="description">Our thanks in advance for taking part in this survey and helping us improve our site</p>
+    </header>
 
-                <div class="form-group">
-                    <label for="name" id="name-label">Name </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name here" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email" id="email-label">Email </label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email here" required>
-                </div>
+    <form action="#" id="survey-form">
 
-                <div class="form-group">
-                    <label for="number" id="number-label">Age (optional)</label>
-                    <input type="number" name="number" id="number" min="13" max="99" placeholder="Enter your age here">
-                </div>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name" id="name-label">Name </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+            </div>
 
-                <div class="form-group">
-                    <label for="dropdown" id="dropdown-label">What is your current position?</label>
-                    <select name="dropdown" id="dropdown">
-                        <option disabled selected value>Select your current role</option>
-                        <option value="student">Student</option>
-                        <option value="employed">Employed</option>
-                        <option value="unemployed">Unemployed</option>
-                        <option value="preferNotSay">Prefer not to say</option>
-                    </select>
-                </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email" id="email-label">Email </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+            </div>
 
-                <div class="form-group">
-                    <p id="reccomondation-question">Would you reccomond freeCodeCamp to any of your friends?</p>
-                    <label for="definitely" id="radio-definitely-label">
-                        <input type="radio" name="recommendation" id="definitely" value="definitely">
-                        Definitely
-                    </label>
-                    <label for="maybe" id="radio-maybe-label">
-                        <input type="radio" name="recommendation" id="maybe" value="maybe">
-                        Maybe
-                    </label>
-                    <label for="not-sure" id="radio-not-sure-label">
-                        <input type="radio" name="recommendation" id="not-sure" value="notSure">
-                        Not sure
-                    </label>
-                    <label for="definitely-not" id="radio-definitely-not-label">
-                        <input type="radio" name="recommendation" id="definitely-not" value="definitelyNot">
-                        Definitely not
-                    </label>
-                </div>
+            <!-- Age -->
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" name="number" id="number" min="13" max="99" placeholder="Enter your age here">
+            </div>
 
-                <div class="form-group">
-                    <p id="suggestion-question">What would you think can be improved about freeCodeCamp?</p>
-                    <label for="more-courses" id="checkbox-more-courses-label">
-                        <input type="checkbox" name="suggestion" id="more-courses" value="moreCourses">
-                        More courses
-                    </label>
-                    <label for="community-support" id="checkbox-community-support-label">
-                        <input type="checkbox" name="suggestion" id="community-support" value="communitySupport">
-                        Community Support
-                    </label>
-                    <label for="challenges" id="checkbox-challenges-label">
-                        <input type="checkbox" name="suggestion" id="challenges" value="challenges">
-                        Challenges
-                    </label>
-                    <label for="videos" id="checkbox-videos-label">
-                        <input type="checkbox" name="suggestion" id="videos" value="videos">
-                        Videos
-                    </label>
-                    <label for="forum" id="checkbox-forum-label">
-                        <input type="checkbox" name="suggestion" id="forum" value="forum">
-                        Forum
-                    </label>
-                    <label for="projects">
-                        <input type="checkbox" name="suggestion" id="projects" value="projects">
-                        Projects
-                    </label>
-                </div>
+            <!-- Current Role -->
+            <div class="form-group">
+                <label for="dropdown" id="dropdown-label">What is your current position?</label>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value>Select your current role</option>
+                    <option value="student">Student</option>
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="preferNotSay">Prefer not to say</option>
+                </select>
+            </div>
 
-                <div class="form-group">
-                    <p id="additional-comment-description">Please, leave any comments or suggestions you may have, here.</p>
-                    <textarea name="comment" id="comment" cols="30" rows="10" id="additional-comment"></textarea>
-                </div>
+            <!-- recommendation to others -->
+            <div class="form-group">
+                <p id="recommendation-question">Would you recommend freeCodeCamp to any of your friends?</p>
+                <label for="definitely" id="radio-definitely-label">
+                    <input type="radio" name="recommendation" id="definitely" value="definitely">
+                    Definitely
+                </label>
+                <label for="maybe" id="radio-maybe-label">
+                    <input type="radio" name="recommendation" id="maybe" value="maybe">
+                    Maybe
+                </label>
+                <label for="not-sure" id="radio-not-sure-label">
+                    <input type="radio" name="recommendation" id="not-sure" value="notSure">
+                    Not sure
+                </label>
+                <label for="definitely-not" id="radio-definitely-not-label">
+                    <input type="radio" name="recommendation" id="definitely-not" value="definitelyNot">
+                    Definitely not
+                </label>
+            </div>
 
-                <div class="form-group">
-                    <button type="submit" id="submit">Submit</button>    
-                </div>
-    
-        </form>
+            <!-- Improvements to FCC -->
+            <div class="form-group">
+                <p id="suggestion-question">What would you think can be improved about freeCodeCamp?</p>
+                <label for="more-courses" id="checkbox-more-courses-label">
+                    <input type="checkbox" name="suggestion" id="more-courses" value="moreCourses">
+                    More courses
+                </label>
+                <label for="community-support" id="checkbox-community-support-label">
+                    <input type="checkbox" name="suggestion" id="community-support" value="communitySupport">
+                    Community Support
+                </label>
+                <label for="challenges" id="checkbox-challenges-label">
+                    <input type="checkbox" name="suggestion" id="challenges" value="challenges">
+                    Challenges
+                </label>
+                <label for="videos" id="checkbox-videos-label">
+                    <input type="checkbox" name="suggestion" id="videos" value="videos">
+                    Videos
+                </label>
+                <label for="forum" id="checkbox-forum-label">
+                    <input type="checkbox" name="suggestion" id="forum" value="forum">
+                    Forum
+                </label>
+                <label for="projects">
+                    <input type="checkbox" name="suggestion" id="projects" value="projects">
+                    Projects
+                </label>
+            </div>
 
-    </div>
+            <!-- Additional comments -->
+            <div class="form-group">
+                <p id="additional-comment-description">Please, leave any comments or suggestions you may have, here.</p>
+                <textarea name="comment" id="comment" cols="30" rows="10" id="additional-comment"></textarea>
+            </div>
 
-    <script src="logic.js"></script>
+            <!-- Submit button -->
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>    
+            </div>
+
+    </form>
+
+</div>
 
 </body>
 

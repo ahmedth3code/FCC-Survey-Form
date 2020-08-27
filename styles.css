@@ -33,53 +33,8 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 800px) {
-    #container {
-        width: 70%;
-    }
-}
 
-@media (max-width: 600px) {
-    #container {
-        width: 80%;
-    }
-}
-
-@media (max-width: 400px) {
-    #container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 300px) {
-    #container {
-        font-size: .7em;
-    }
-
-    #description {
-        font-size: 1.2em;
-    }
-
-    .form-group input[type='radio'],
-    .form-group input[type='checkbox'] {
-        transform: scale(.1);
-    }
-
-    .form-group input[type='text'],
-    .form-group input[type='email'],
-    .form-group input[type='number'],
-    .form-group textarea {
-        padding: 0;
-    }
-}
-
-@media (max-width: 300px) {
-    #container {
-        width: 95%;
-    }
-}
-
-
+/* Header Design */
 
 header {
     margin: 1.1em 0;
@@ -93,6 +48,9 @@ header #title {
 header #description {
     font-style: italic;
 }
+
+
+/* Form Design */
 
 #survey-form {
     padding: 1.5em;
@@ -135,9 +93,10 @@ header #description {
     color: var(--color-prime);
 }
 
-#additional-comment {
+#comment {
     border-radius: .1em;
     color: var(--color-prime);
+    padding: 1em;
 }
 
 #submit {
@@ -147,5 +106,49 @@ header #description {
     border: none;
     color: var(--color-tertiary);
     font-size: 1.1em;
+}
+
+
+
+/* Responsive  */
+@media (max-width: 800px) {
+    #container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    #container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 300px) {
+    #container {
+        width: 95%;
+        font-size: .7em;
+    }
+
+    #description {
+        font-size: 1.2em;
+    }
+
+    .form-group input[type='radio'],
+    .form-group input[type='checkbox'] {
+        transform: scale(1);
+    }
+
+    .form-group input[type='text'],
+    .form-group input[type='email'],
+    .form-group input[type='number'],
+    .form-group textarea {
+        padding: 0;
+    }
 }
 
